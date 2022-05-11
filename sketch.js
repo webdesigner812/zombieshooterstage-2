@@ -41,11 +41,7 @@ player = createSprite(displayWidth-1150, displayHeight-300, 50, 50);
 
 
    //creating sprites to depict lives remaining
-   heart1 = createSprite(displayWidth-150,40,20,20)
-   heart1.visible = false
-    heart1.addImage("heart1",heart1Img)
-    heart1.scale = 0.4
-
+  
     
     //creating group for zombies    
    
@@ -97,13 +93,6 @@ function enemy(){
   if(frameCount%50===0){
 
     //giving random x and y positions for zombie to appear
-    zombie = createSprite(random(500,1100),random(100,500),40,40)
-
-    zombie.addImage(zombieImg)
-    zombie.scale = 0.15
-    zombie.velocityX = -3
-    zombie.debug= true
-    zombie.setCollider("rectangle",0,0,400,400)
    
     
   }
